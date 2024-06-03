@@ -1,0 +1,22 @@
+.game-card {
+  @apply relative overflow-hidden rounded-lg shadow-lg;
+
+  &__image {
+    @apply w-full h-full object-cover transition-transform duration-300;
+  }
+
+  &__info {
+    @apply absolute inset-0 flex items-end p-4 text-white text-lg;
+    background-color: rgba(43, 43, 43, 0.7);
+    transition: transform 0.3s;
+    transform: translateY(100%);
+  }
+
+  &:hover &__image {
+    transform: scale(1.1);
+  }
+
+  &:hover &__info {
+    transform: translateY(0);
+  }
+}

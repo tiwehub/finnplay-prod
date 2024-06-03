@@ -1,0 +1,21 @@
+.filter-input {
+  @apply relative w-full;
+
+  &__input {
+    @apply w-full p-2 pr-10 pl-3 border rounded text-text
+    focus:ring-1 focus:ring-accent focus:border-accent focus:outline-none
+    hover:border-accent active:border-accent active:ring-accent;
+
+    &::placeholder {
+      @apply text-muted;
+    }
+  }
+
+  &__button {
+    @apply absolute right-0 top-1/2 transform -translate-y-1/2 w-10 h-full flex items-center justify-center;
+  }
+
+  &__icon {
+    @apply w-4 h-4;
+  }
+}

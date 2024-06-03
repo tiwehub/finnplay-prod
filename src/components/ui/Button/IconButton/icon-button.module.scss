@@ -1,0 +1,14 @@
+.icon-button {
+  @apply flex items-center space-x-2;
+
+  &--loading {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  &__icon {
+    @apply h-5 w-5;
+  }
+
+  &__text {
+  }
+}

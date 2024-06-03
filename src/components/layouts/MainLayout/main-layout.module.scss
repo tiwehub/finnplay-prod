@@ -1,0 +1,13 @@
+.main-layout {
+  &__container {
+    @apply flex flex-col-reverse md:flex-row container my-16 gap-5;
+  }
+
+  &__main {
+    @apply flex-1 lg:w-full;
+  }
+
+  &__sidebar {
+    @apply w-full min-[768px]:w-[250px] lg:w-[412px];
+  }
+}

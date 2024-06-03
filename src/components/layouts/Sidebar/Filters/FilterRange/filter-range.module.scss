@@ -1,0 +1,31 @@
+.filter-range {
+  @apply mt-4 relative;
+
+  &__title {
+    @apply text-muted mb-2;
+  }
+
+  &__container {
+    @apply relative w-full flex items-center justify-between;
+  }
+
+  &__button {
+    @apply rounded-full w-6 h-6 flex items-center justify-center cursor-pointer z-20;
+
+    &--active {
+      @apply bg-accent;
+    }
+
+    &--inactive {
+      @apply bg-foreground;
+    }
+  }
+
+  &__background {
+    @apply absolute top-1/2 -translate-y-1/2 left-0 right-0 h-2 bg-foreground rounded-full z-10;
+  }
+
+  &__foreground {
+    @apply absolute top-1/2 -translate-y-1/2 left-0 h-2 bg-accent rounded-full z-10;
+  }
+}

@@ -1,0 +1,23 @@
+.filter-list {
+  @apply mt-4;
+
+  &__title {
+    @apply text-muted;
+  }
+
+  &__items {
+    @apply flex flex-wrap xm:flex-row md:flex-wrap gap-y-1;
+  }
+
+  &__item {
+    @apply cursor-pointer py-1 px-2 rounded md:text-center w-fit me-7 select-none;
+
+    &--active {
+      @apply bg-accent;
+    }
+
+    &--inactive {
+      @apply bg-transparent;
+    }
+  }
+}

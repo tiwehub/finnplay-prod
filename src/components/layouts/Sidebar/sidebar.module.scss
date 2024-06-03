@@ -1,0 +1,27 @@
+.sidebar {
+  @apply bg-white p-6 border border-border rounded-lg h-fit;
+
+  &__filters {
+    @apply flex flex-col-reverse;
+  }
+
+  &__filter-toggle {
+    @apply text-secondary mx-auto mt-4;
+  }
+
+  &__filter-list {
+    @apply mb-4;
+  }
+
+  &__filter-range {
+    @apply mt-4 flex items-center justify-between xm:flex-col lg:flex-row lg:justify-between;
+  }
+
+  &__games-amount {
+    @apply text-muted;
+  }
+
+  &__reset-button {
+    @apply xm:w-full xm:mt-4 lg:w-fit lg:px-8 lg:mt-0;
+  }
+}

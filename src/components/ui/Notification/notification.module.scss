@@ -1,0 +1,43 @@
+.notification {
+  &__enter {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  &__enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  &__exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__exit-active {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  &--error {
+    @apply bg-red-500 text-white;
+  }
+
+  &--success {
+    @apply bg-green-500 text-white;
+  }
+
+  &--info {
+    @apply bg-blue-500 text-white;
+  }
+
+  &__container {
+    @apply fixed top-2 right-2 m-4;
+  }
+
+  &__item {
+    @apply p-4 mb-4 border rounded shadow-lg;
+  }
+}

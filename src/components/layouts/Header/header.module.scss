@@ -1,0 +1,23 @@
+.header {
+  box-shadow: 0 -2px 18px 0 rgba(127, 127, 127, 0.1);
+
+  &__container {
+    @apply container;
+  }
+
+  &__content {
+    @apply flex justify-between items-center;
+  }
+
+  &__user-section {
+    @apply flex items-center space-x-8;
+  }
+
+  &__username {
+    @apply font-helvetica;
+  }
+
+  &__button {
+    @apply text-primary;
+  }
+}

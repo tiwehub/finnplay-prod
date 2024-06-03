@@ -86,52 +86,6 @@ export default [
       ],
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
-      "import/no-restricted-paths": [
-        "error",
-        {
-          zones: [
-            {
-              target: "./src/features/auth",
-              from: "./src/features",
-              except: ["./auth"]
-            },
-            {
-              target: "./src/features/comments",
-              from: "./src/features",
-              except: ["./comments"]
-            },
-            {
-              target: "./src/features/discussions",
-              from: "./src/features",
-              except: ["./discussions"]
-            },
-            {
-              target: "./src/features/teams",
-              from: "./src/features",
-              except: ["./teams"]
-            },
-            {
-              target: "./src/features/users",
-              from: "./src/features",
-              except: ["./users"]
-            },
-            {
-              target: "./src/features",
-              from: "./src/app"
-            },
-            {
-              target: [
-                "./src/components",
-                "./src/hooks",
-                "./src/lib",
-                "./src/types",
-                "./src/utils"
-              ],
-              from: ["./src/features", "./src/app"]
-            }
-          ]
-        }
-      ],
       "import/default": "off",
       "import/no-named-as-default-member": "off",
       "import/no-named-as-default": "off",
